@@ -1,22 +1,46 @@
 {
+  "404": [
+    "cog-internal-feature-static-file-generation-404__en__cfcd208495d565ef66e7dff9f98764da.json"
+  ],
   "city": [
-    "directory-city__en__964b544d7823fc0633a060fd904176d0.json",
-    "directory-city__en__82782b2605ed8fe8ba33d83a14680e56.json"
+    "directory-city__en__96ed0ec1e252a0cce2726e39392c3e4a.json",
+    "directory-city__en__dc83d4903ed16abe6e4ef34a00a73b6f.json",
+    "directory-city__en__eb60f63af778ab0ca71d2ec069fc40f1.json",
+    "directory-city__en__b0202c734c7bcd0d263378a7583dd5cd.json",
+    "directory-city__en__e518e3c78b36399a9377762618911552.json",
+    "directory-city__en__0d230df3ae6a578090728ba9f1a67ee0.json",
+    "directory-city__en__ad144f5d67198b62aade361896c75a6a.json",
+    "directory-city__en__53e5af28af585049ff5f3f483b8a5ebf.json",
+    "directory-city__en__9c9d95ad3401523dc52264a652ece5ad.json",
+    "directory-city__en__0699592a9b4092fc3bc76c7dccc98725.json"
   ],
   "entity": [
-    "locations__en__65706fda938b7baf4da9842dc9174581.json",
-    "locations__en__bedacbff42a767c32534cfe5a2c697e2.json",
-    "locations__en__e7879db810774abc8cd1000f29e868f7.json",
-    "locations__en__c4f729fae841e9c79ff7a1deb820586e.json",
-    "locations__en__868165b4e022d87e061bcc0426f620b5.json"
+    "locations__en__20ef2de66ee2837dc3e992e54d05bdb1.json",
+    "locations__en__e91aaf19b80e2f53d8888fbcf10f80ac.json",
+    "locations__en__0e55b4bc8e9d448b8bfb90fcc784f377.json",
+    "locations__en__935e19ced30229d8370096cf7d0dc97e.json",
+    "locations__en__9f12efcbc8978445892bbb675f952160.json",
+    "locations__en__73a1ff1f1eda423b9e5e089e613956f4.json",
+    "locations__en__2265b7a5750580bece17293d414f856e.json",
+    "locations__en__080d0433fe9908d21d9b943d93392481.json",
+    "locations__en__7a178031a75c9d0384c7229d498cba3e.json",
+    "locations__en__2f0d618e3d173ab9fee828051735475c.json"
   ],
   "region": [
-    "directory-region__en__a467079276adfd1e162839fb16569e38.json",
-    "directory-region__en__1210576f6b59e22e89e12a77f7a798a6.json"
+    "directory-region__en__d51fab675cec1f07c1a48230f17fda4f.json",
+    "directory-region__en__9f12e75f503716d91d3a203a424a8031.json",
+    "directory-region__en__6783248c5fc104014d0c0593551be5f2.json",
+    "directory-region__en__3a5a2821e7267ed4ad89d3862111d3dd.json",
+    "directory-region__en__4cb341a92b47a54b29cdd32a98949a2a.json",
+    "directory-region__en__eda5762bd35a4ce85bb69f078c5bdb8b.json",
+    "directory-region__en__3fd6204492600e2551db0da96ee4b52c.json",
+    "directory-region__en__dc56f2ed14d5821ea61220b1b33417cf.json",
+    "directory-region__en__bc1845c7409b2d65bfbd498388db1d5d.json",
+    "directory-region__en__fdcb9ed1436a7bebd2e7280a9fc60ebf.json"
   ],
   "robots": [
     "cog-internal-feature-static-file-generation-robots__en__cfcd208495d565ef66e7dff9f98764da.json"
   ],
-  "root": ["directory-root__en__a9692a4fddb39679e182eede5b5da11b.json"],
-  "search": ["search-page__en__d2148443c57696a3a7b3206170755172.json"]
+  "root": ["directory-root__en__98414238fbcc465c9e9388602a526033.json"],
+  "search": ["search-page__en__d313000a9f93b93194414d6e288856cb.json"]
 }

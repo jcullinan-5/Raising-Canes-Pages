@@ -9,6 +9,8 @@ import { Footer } from "src/components/common/Footer";
 import { useExposeEnableYAFunction } from "src/common/useExposeEnableYAFunction";
 import config from "src/config";
 import { initi18n } from "src/i18n";
+import { MobileHeader } from "src/components/common/MobileHeader";
+import { MobileLocator } from "src/components/common/MobileLocator";
 
 interface MainProps {
   data: TemplateRenderProps<BaseProfile>;
@@ -39,22 +41,13 @@ const MainInternal = (props: MainProps) => {
   return (
     <TemplateDataProvider value={props.data}>
       <ErrorBoundaryWithAnalytics name="header">
-        <Header
-          logo={_site?.c_header?.logo}
-          links={_site?.c_header?.links || []}
-        />
+        <Header />
+        <MobileLocator />
+        <MobileHeader />
       </ErrorBoundaryWithAnalytics>
-      {children}
+      <div>{children}</div>
       <ErrorBoundaryWithAnalytics name="footer">
-        <Footer
-          copyrightMessage={_site.c_copyrightMessage || ""}
-          facebook={_site.c_facebook}
-          instagram={_site.c_instagram}
-          youtube={_site.c_youtube}
-          twitter={_site.c_twitter}
-          linkedIn={_site.c_linkedIn}
-          footerLinks={_site.c_footerLinks || []}
-        />
+        <Footer />
       </ErrorBoundaryWithAnalytics>
     </TemplateDataProvider>
   );

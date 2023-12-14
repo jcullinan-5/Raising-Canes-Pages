@@ -70,7 +70,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
 
   return (
     <>
-      {showBanner && (
+      {/* {showBanner && (
         <ErrorBoundaryWithAnalytics name="banner">
           <Banner text={banner.text} image={banner.image} />
         </ErrorBoundaryWithAnalytics>
@@ -118,7 +118,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
         <ErrorBoundaryWithAnalytics name="events">
           <Events title={events.title} items={events.events} />
         </ErrorBoundaryWithAnalytics>
-      )}
+      )} */}
       {showAbout && (
         <ErrorBoundaryWithAnalytics name="about">
           <About
@@ -129,7 +129,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
           />
         </ErrorBoundaryWithAnalytics>
       )}
-      {showInsights && (
+      {/* {showInsights && (
         <ErrorBoundaryWithAnalytics name="insights">
           <Insights
             title={insights.title}
@@ -172,7 +172,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
             id={id}
           />
         </ErrorBoundaryWithAnalytics>
-      </LazyLoadWrapper>
+      </LazyLoadWrapper> */}
     </>
   );
 };

@@ -1,6 +1,289 @@
-/*
-  Use this file to create custom CSS properties, or override the default values
-  provided by imported components.
-*/
 html {
+  box-sizing: border-box;
+}
+
+.layout-module--layout--27d29 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  min-height: 100vh;
+  outline: 0;
+}
+
+a {
+  -webkit-text-decoration-skip: objects;
+  background-color: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  color: rgba(0, 0, 0, 0.8);
+  color: #242424;
+  font-family: DMSans, sans-serif !important;
+  font-kerning: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+img {
+  border-style: none;
+  margin: 0 0 1.45rem;
+  max-width: 100%;
+  padding: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  max-width: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+section {
+  display: block;
+}
+
+h1 {
+  color: inherit;
+  font-family: Berthold City Bold;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 1.45rem;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+}
+
+@media (min-width: 28em) {
+  h1 {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 48em) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 62em) {
+  h1 {
+    font-size: 54px;
+  }
+}
+
+@media (min-width: 75em) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 0 0 1.45rem;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+h2 {
+  color: inherit;
+  font-family: Berthold City Bold;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 1.45rem;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+}
+@media (min-width: 28em) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 48em) {
+  h2 {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 62em) {
+  h2 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 75em) {
+  h2 {
+    font-size: 54px;
+  }
+}
+
+ol,
+ul {
+  list-style-image: none;
+  list-style-position: outside;
+  margin: 0 0 1.45rem 1.45rem;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+ul,
+li {
+  font-family: DMSans, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0 10px;
+}
+
+ol li,
+ul li {
+  padding-left: 0;
+}
+
+ul > li:first-child {
+  margin-left: 0;
+}
+
+@media (min-width: 75em) {
+  li {
+    font-size: 14px;
+    margin: 0 20px;
+  }
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.global-module--red-button--56e40 {
+  background-color: #d71c2e;
+  border: 1px solid #d71c2e;
+  border-radius: 12px;
+  color: #fff !important;
+  display: block;
+  font-family: DMSans, sans-serif;
+  font-weight: Bold;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 0.6em;
+  text-decoration: none !important;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+h3,
+h4 {
+  color: inherit;
+  font-family: Berthold City Bold;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 1.45rem;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+}
+
+.mobileHeaderNavigation-module--background--b93b2 svg path {
+  fill: #fcf4ec;
+}
+
+.global-module--red-button--56e40:hover {
+  background-color: #940513;
+  border: 1px solid #940513;
+  color: #fff;
+}
+
+.global-module--red-button--56e40:hover svg rect {
+  stroke: #fff;
+}
+
+.global-module--red-button--56e40:hover svg ellipse,
+.global-module--red-button--56e40:hover svg path {
+  fill: #fff;
+}
+
+.global-module--white-ghost-button--39ce7:hover {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #940513;
+}
+
+.global-module--white-ghost-button--39ce7:hover svg rect {
+  stroke: #940513;
+}
+
+.global-module--white-ghost-button--39ce7:hover svg ellipse,
+.global-module--white-ghost-button--39ce7:hover svg path {
+  fill: #940513;
 }

@@ -1,11 +1,8 @@
 {
   "__": {
-    "name": "robots",
-    "staticPage": {},
-    "templateType": "JS"
+    "name": "robots"
   },
   "_site": {
-    "c_brand": "Yext Consulting",
     "c_copyrightMessage": "© 2022. All Rights Reserved.",
     "c_facebook": "https://www.facebook.com/",
     "c_footerLinks": [
@@ -71,9 +68,7 @@
     },
     "c_instagram": "https://www.instagram.com/",
     "c_linkedIn": "https://www.linkedin.com/",
-    "c_nearbySectionAPIKey": "a76f3747d89260bdebb2c3223cffe03e",
-    "c_reviewsAPIKey": "950cb865b1378ec95ad87c7b2a54a806",
-    "c_searchExperienceAPIKey": "134988aadced7171cc410730c3aec4f6",
+    "c_nearbySectionAPIKey": "25afa3418ba5fd1fd47fd8841b70e293",
     "c_searchPage": [
       {
         "slug": "search"
@@ -85,14 +80,14 @@
     "meta": {
       "entityType": {
         "id": "ce_site",
-        "uid": 132489
+        "uid": 141934
       },
       "locale": "en"
     },
     "name": "Site Entity",
-    "uid": 64216926
+    "uid": 1026197551
   },
-  "businessId": 3861963,
+  "businessId": 4109875,
   "key": "0:robots:knowledgeGraph:0:en",
   "locale": "en",
   "meta": {
