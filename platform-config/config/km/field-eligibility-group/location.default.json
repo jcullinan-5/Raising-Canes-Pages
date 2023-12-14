@@ -2,7 +2,7 @@
   "$id": "proserveStarter_location",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
   "name": "Proserve Starter Location",
-  "entityType": "location",
+  "entityType": "restaurant",
   "fields": [
     "c_aboutSection",
     "c_bannerSection",

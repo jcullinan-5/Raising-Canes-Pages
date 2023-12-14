@@ -6,8 +6,8 @@
   "countryRestrictions": [],
   "verticals": {
     "locations": {
-      "entityTypes": ["location"],
-      "name": "Locations",
+      "entityTypes": ["restaurant"],
+      "name": "Restaurants",
       "savedSearchId": "pages_locations",
       "searchableFields": {
         "builtin.location": {

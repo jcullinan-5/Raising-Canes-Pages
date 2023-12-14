@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.yext.com/config/km/settings/v1",
-  "primaryEntityType": "location",
+  "primaryEntityType": "restaurant",
   "entityTypeSettings": [
     {
       "entityType": "faq",

@@ -11,7 +11,7 @@
     ],
     "entityType": [
       {
-        "entityTypeId": ["location"],
+        "entityTypeId": ["restaurant"],
         "type": "IS"
       }
     ]

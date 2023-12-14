@@ -3,7 +3,7 @@
   "$schema": "https://schema.yext.com/config/pages/directory-manager/v1",
   "name": "Directory",
   "baseEntities": {
-    "entityTypes": ["location"]
+    "entityTypes": ["restaurant"]
   },
   "root": {
     "entityType": "ce_root",

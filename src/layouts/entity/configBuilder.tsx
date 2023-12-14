@@ -102,7 +102,7 @@ export const configBuilder: (
     ]),
     // Defines the scope of entities that qualify for this stream.
     filter: filter || {
-      entityTypes: ["location"],
+      savedFilterIds: ["1350689426"],
     },
     // The entity language profiles that documents will be generated for.
     localization: {
