@@ -1,6 +1,6 @@
 import type { TemplateRenderProps, HeadConfig, Tag } from "@yext/pages";
 import { SchemaBuilder } from "src/common/schema";
-import favicon from "src/assets/images/favicon.ico";
+import favicon from "src/assets/images/canes.png";
 
 const dnsPrefetchTags: Tag[] = [
   {

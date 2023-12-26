@@ -99,6 +99,7 @@ export const configBuilder: (
       // "c_teamSection.team.c_occupation",
       // "c_teamSection.team.emails",
       // "c_teamSection.team.websiteUrl",
+      "c_nickname",
     ]),
     // Defines the scope of entities that qualify for this stream.
     filter: filter || {

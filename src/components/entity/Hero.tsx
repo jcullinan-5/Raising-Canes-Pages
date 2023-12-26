@@ -1,8 +1,15 @@
-import { HoursStatus } from "@yext/sites-react-components";
-import { Link, Image } from "@yext/sites-components";
+import { HoursTable } from "@yext/sites-react-components";
+import { getDirections, LocationMap, GoogleMaps } from "@yext/sites-components";
+import { Link } from "@yext/sites-components";
+import type { LocationProfile } from "src/types/entities";
 import type { Address, Hours, CTA, Image as ImageType } from "@yext/types";
+// import { useBreakpoint } from "src/common/useBreakpoints";
+// import { LazyLoadWrapper } from "src/components/common/LazyLoadWrapper";
+import { useMapKey } from "src/common/useMapKey";
+import Distance from "src/components/entity/Distance";
 
 type HeroProps = {
+  profile: LocationProfile;
   name: string;
   address: Address;
   background?: ImageType;
@@ -13,52 +20,74 @@ type HeroProps = {
   rating?: number;
 };
 
+// const dayAbbreviations = {
+//   Sunday: "Sun",
+//   Monday: "Mon",
+//   Tuesday: "Tue",
+//   Wednesday: "Wed",
+//   Thursday: "Thu",
+//   Friday: "Fri",
+//   Saturday: "Sat",
+// };
+
 const Hero = (props: HeroProps) => {
+  const mapKey = useMapKey();
+
   return (
-    <div className="Hero py-8 sm:py-16">
-      <div className="container flex flex-col lg:flex-row">
-        <div className="w-full lg:w-1/2 lg:mt-8 mb-6 lg:mb-0 lg:mr-8">
-          <h1 className="Heading Heading--sub mb-4 sm:mb-0">{props.name}</h1>
-          <div className="Heading Heading--lead mb-4">
-            {props.address.line1}
-          </div>
+    <section className="module--location-details">
+      <div className="module--details-hero">
+        <Distance yextDisplayCoordinate={props.profile.yextDisplayCoordinate} />
+        <h1 className="module--title-hero">{props.profile.name}</h1>
+        <div className="module--hours-wrapper">
+          <p className="module--hours-title--hero">Hours of Operation:</p>
           {props.hours && (
-            <div className="mb-4">
-              <HoursStatus
-                hours={props.hours}
-                separatorTemplate={() => <span className="bullet" />}
-                dayOfWeekTemplate={() => null}
-              />
-            </div>
-          )}
-          {/* TODO(aganesh) : use Reviews component when available */}
-          {props.rating && (
-            <div className="mb-6 lg:mb-8">
-              <span> {props.rating} out of 5 </span>
-              <span>({props.numReviews} reviews)</span>
-            </div>
-          )}
-          {(props.cta1 || props.cta2) && (
-            <div className="flex flex-col lg:flex-row mb-4 gap-4">
-              {props.cta1 && (
-                <Link className="Button Button--primary" cta={props.cta1} />
-              )}
-              {props.cta2 && (
-                <Link className="Button Button--secondary" cta={props.cta2} />
-              )}
+            <div className="hero--hours">
+              <HoursTable hours={props.hours} startOfWeek="Sunday" />
             </div>
           )}
         </div>
-        {props.background && (
-          <div className="w-full lg:w-1/2">
-            <Image
-              className="w-full h-full object-cover"
-              image={props.background}
-            />
-          </div>
-        )}
+        <p className="module--nickname-hero">"{props.profile.c_nickname}"</p>
+        <p className="module--address-hero">
+          {props.address.line1} {props.address.line2} {props.address.city},
+          &nbsp;
+          {props.address.region} {props.address.postalCode}
+        </p>
+        <p className="module--phone-hero">
+          <b>Phone: </b>
+          {props.profile.mainPhone}
+        </p>
+        <div className="module--button-container-hero">
+          <a
+            href="https://order.raisingcanes.com"
+            className="ghost--button--responsive hero--ordernow"
+          >
+            Order Now
+          </a>
+          <Link
+            className="ghost--button--responsive hero--directions "
+            href={`${getDirections(
+              props.profile.address,
+              props.profile.ref_listings,
+              props.profile.googlePlaceId
+            )}`}
+          >
+            Get Directions
+          </Link>
+        </div>
       </div>
-    </div>
+      <div className="module--map-hero">
+        <div className="locationsMap-module--locations-map--41c42">
+          <LocationMap
+            className="module--map--285d5"
+            coordinate={props.profile.yextDisplayCoordinate}
+            provider={GoogleMaps}
+            {...mapKey}
+          >
+            <div className="locationPin-module--pin--4f733">1</div>
+          </LocationMap>
+        </div>
+      </div>
+    </section>
   );
 };
 

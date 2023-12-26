@@ -2,8 +2,8 @@
 @import "src/styles/utils.css";
 @import "src/styles/fonts.css";
 @import "src/styles/theme.css";
-/* @import "src/components/entity/about.css";
-@import "src/components/entity/hero.css"; */
+@import "src/components/entity/about.css";
+@import "src/components/entity/hero.css";
 @import "src/components/common/Web Header.css";
 @import "src/components/common/Footer.css";
 @import "src/components/common/MobileHeader.css";
@@ -30,5 +30,4 @@ https://github.com/yext/pages/issues/211 is resolved */
   display: grid;
   height: 100%;
   grid-template-rows: auto 1fr auto;
-  font-family: theme(fontFamily.primary);
 }

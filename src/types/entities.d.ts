@@ -131,6 +131,8 @@ export interface LocationProfile extends BaseProfile {
 
   // Add custom fields here
   // c_myStringField: string
+  c_nickname: string;
+
   readonly c_eventsSection?: {
     readonly title?: string;
     readonly events?: EventProfile[];

@@ -69,7 +69,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
   const showInsights = insights?.title && insights?.insights;
 
   return (
-    <>
+    <div className="main--content">
       {/* {showBanner && (
         <ErrorBoundaryWithAnalytics name="banner">
           <Banner text={banner.text} image={banner.image} />
@@ -81,7 +81,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
           separator="/"
           className="container"
         />
-      </ErrorBoundaryWithAnalytics>
+      </ErrorBoundaryWithAnalytics> */}
       <ErrorBoundaryWithAnalytics name="hero">
         <Hero
           name={name}
@@ -90,14 +90,13 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
           address={address}
           background={hero?.background}
           hours={hours}
-          numReviews={21}
-          rating={4.5}
+          profile={data.document}
         />
       </ErrorBoundaryWithAnalytics>
-      <ErrorBoundaryWithAnalytics name="core">
+      {/* <ErrorBoundaryWithAnalytics name="core">
         <Core profile={data.document} />
-      </ErrorBoundaryWithAnalytics>
-      {showPromo && (
+      </ErrorBoundaryWithAnalytics> */}
+      {/* {showPromo && (
         <ErrorBoundaryWithAnalytics name="promo">
           <Promo
             title={promo.title}
@@ -126,6 +125,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
             image={about.image}
             description={about.description || description}
             cta={about.cta}
+            hours={hours}
           />
         </ErrorBoundaryWithAnalytics>
       )}
@@ -173,7 +173,7 @@ const EntityLayout = ({ data }: EntityLayoutProps) => {
           />
         </ErrorBoundaryWithAnalytics>
       </LazyLoadWrapper> */}
-    </>
+    </div>
   );
 };
 

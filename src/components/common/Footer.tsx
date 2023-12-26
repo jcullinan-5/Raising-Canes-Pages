@@ -431,7 +431,7 @@ const Footer = () => {
                 data-testid="custom-link"
                 target="_self"
                 className="footerNavigationGroup-module--nav-link--ea4ff"
-                href="/menu"
+                href="https://raisingcanes.com/menu/"
               >
                 Our Menu
               </a>
@@ -439,7 +439,7 @@ const Footer = () => {
                 data-testid="custom-link"
                 target="_self"
                 className="footerNavigationGroup-module--nav-link--ea4ff"
-                href="/locations"
+                href="/search"
               >
                 Locations
               </a>
@@ -474,7 +474,7 @@ const Footer = () => {
                 data-testid="custom-link"
                 target="_self"
                 className="footerNavigationGroup-module--nav-link--ea4ff"
-                href="/who-we-are"
+                href="https://raisingcanes.com/who-we-are/"
               >
                 Who We Are
               </a>
@@ -482,7 +482,7 @@ const Footer = () => {
                 data-testid="custom-link"
                 target="_self"
                 className="footerNavigationGroup-module--nav-link--ea4ff"
-                href="/community-partnerships"
+                href="https://raisingcanes.com/community-partnerships/"
               >
                 Community Partnerships
               </a>

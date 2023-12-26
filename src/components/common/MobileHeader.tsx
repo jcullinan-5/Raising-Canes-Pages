@@ -145,7 +145,7 @@ const MobileHeader = () => {
                       data-testid="custom-link"
                       target="_self"
                       className="mobileHeaderNavigation-module--primary-link--c82a4"
-                      href="/locations"
+                      href="/search"
                     >
                       Locations
                     </a>

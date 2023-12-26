@@ -10,7 +10,7 @@ const config: ConfigurationProviderContextType = {
 export default config;
 
 // Key for Maps provider.
-export const MAPS_API_KEY = "<REPLACE-ME>";
+export const MAPS_API_KEY = "AIzaSyCyqC97MTfYFvEl1YTK17fOyf9944hfIv4";
 
 // Path for the search page.
 // Exported here since it's required across multiple pages such as the nearby section and directory search bar.
