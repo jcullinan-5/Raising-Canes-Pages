@@ -100,10 +100,10 @@ const Gallery = (props: GalleryProps) => {
 };
 
 export default Gallery;
-.is-loaded.module--map--285d5 button {
-  border: 3px solid #d71c2e;
-  border-radius: 16px;
-  height: 32px;
-  padding: 2px;
-  width: 32px;
-}
+// .is-loaded.module--map--285d5 button {
+//   border: 3px solid #d71c2e;
+//   border-radius: 16px;
+//   height: 32px;
+//   padding: 2px;
+//   width: 32px;
+// }
